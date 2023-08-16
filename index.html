@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="header">
+            <h2>My To-Do-List App</h2>
+            <p>Double click an item to mark in complete</p>
+        </div>
+        <form name="todo">
+            <input id="inputText" type="text" placeholder="masukkan text">
+        </form>
+        <button id="buttonText">Add</button>
+        <br>
+        <ol id="todo-list">
+        </ol>
+        <div id="control-wrapper">
+            <button id="clear-completed-button" onclick="clearCompletedToDoItems()" class="pretty-button">Clear Completed</button>
+            <button id="empty-button" onclick="emptyList()" class="pretty-button">Empty List</button>
+            <button id="save-button" onclick="saveList()" class="pretty-button">Save List</button>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
